@@ -23,6 +23,15 @@
 		F211A4B31DE75A96006CC328 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4AD1DE75A96006CC328 /* AFURLSessionManager.m */; };
 		F211A4B61DE75CBA006CC328 /* XTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4B51DE75CBA006CC328 /* XTAPIClient.m */; };
 		F211A4B91DE7747E006CC328 /* XTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4B81DE7747E006CC328 /* XTSession.m */; };
+		F211A4D01DE78AE1006CC328 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4BD1DE78AE1006CC328 /* JSONModel.m */; };
+		F211A4D11DE78AE1006CC328 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4BF1DE78AE1006CC328 /* JSONModelClassProperty.m */; };
+		F211A4D21DE78AE1006CC328 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4C11DE78AE1006CC328 /* JSONModelError.m */; };
+		F211A4D31DE78AE1006CC328 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4C51DE78AE1006CC328 /* JSONAPI.m */; };
+		F211A4D41DE78AE1006CC328 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4C71DE78AE1006CC328 /* JSONHTTPClient.m */; };
+		F211A4D51DE78AE1006CC328 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4C91DE78AE1006CC328 /* JSONModel+networking.m */; };
+		F211A4D61DE78AE1006CC328 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4CC1DE78AE1006CC328 /* JSONKeyMapper.m */; };
+		F211A4D71DE78AE1006CC328 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4CE1DE78AE1006CC328 /* JSONValueTransformer.m */; };
+		F211A4DA1DE78B7B006CC328 /* XTGameWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4D91DE78B7B006CC328 /* XTGameWorld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +66,26 @@
 		F211A4B51DE75CBA006CC328 /* XTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAPIClient.m; sourceTree = "<group>"; };
 		F211A4B71DE7747D006CC328 /* XTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSession.h; sourceTree = "<group>"; };
 		F211A4B81DE7747E006CC328 /* XTSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSession.m; sourceTree = "<group>"; };
+		F211A4BC1DE78AE1006CC328 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		F211A4BD1DE78AE1006CC328 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		F211A4BE1DE78AE1006CC328 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		F211A4BF1DE78AE1006CC328 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		F211A4C01DE78AE1006CC328 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		F211A4C11DE78AE1006CC328 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		F211A4C21DE78AE1006CC328 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		F211A4C41DE78AE1006CC328 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		F211A4C51DE78AE1006CC328 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		F211A4C61DE78AE1006CC328 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		F211A4C71DE78AE1006CC328 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		F211A4C81DE78AE1006CC328 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		F211A4C91DE78AE1006CC328 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		F211A4CB1DE78AE1006CC328 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		F211A4CC1DE78AE1006CC328 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		F211A4CD1DE78AE1006CC328 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		F211A4CE1DE78AE1006CC328 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		F211A4CF1DE78AE1006CC328 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F211A4D81DE78B7B006CC328 /* XTGameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGameWorld.h; sourceTree = "<group>"; };
+		F211A4D91DE78B7B006CC328 /* XTGameWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGameWorld.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +161,7 @@
 		F211A4731DE7442B006CC328 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F211A4BA1DE78AE1006CC328 /* JSONModel */,
 				F211A4A01DE75A96006CC328 /* AFNetworking */,
 				F211A4931DE75882006CC328 /* MBProgressHUD */,
 			);
@@ -145,6 +175,8 @@
 				F211A4B51DE75CBA006CC328 /* XTAPIClient.m */,
 				F211A4B71DE7747D006CC328 /* XTSession.h */,
 				F211A4B81DE7747E006CC328 /* XTSession.m */,
+				F211A4D81DE78B7B006CC328 /* XTGameWorld.h */,
+				F211A4D91DE78B7B006CC328 /* XTGameWorld.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +225,55 @@
 				F211A4AD1DE75A96006CC328 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F211A4BA1DE78AE1006CC328 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				F211A4BB1DE78AE1006CC328 /* JSONModel */,
+				F211A4C21DE78AE1006CC328 /* JSONModelLib.h */,
+				F211A4C31DE78AE1006CC328 /* JSONModelNetworking */,
+				F211A4CA1DE78AE1006CC328 /* JSONModelTransformations */,
+				F211A4CF1DE78AE1006CC328 /* module.modulemap */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		F211A4BB1DE78AE1006CC328 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				F211A4BC1DE78AE1006CC328 /* JSONModel.h */,
+				F211A4BD1DE78AE1006CC328 /* JSONModel.m */,
+				F211A4BE1DE78AE1006CC328 /* JSONModelClassProperty.h */,
+				F211A4BF1DE78AE1006CC328 /* JSONModelClassProperty.m */,
+				F211A4C01DE78AE1006CC328 /* JSONModelError.h */,
+				F211A4C11DE78AE1006CC328 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		F211A4C31DE78AE1006CC328 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F211A4C41DE78AE1006CC328 /* JSONAPI.h */,
+				F211A4C51DE78AE1006CC328 /* JSONAPI.m */,
+				F211A4C61DE78AE1006CC328 /* JSONHTTPClient.h */,
+				F211A4C71DE78AE1006CC328 /* JSONHTTPClient.m */,
+				F211A4C81DE78AE1006CC328 /* JSONModel+networking.h */,
+				F211A4C91DE78AE1006CC328 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		F211A4CA1DE78AE1006CC328 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				F211A4CB1DE78AE1006CC328 /* JSONKeyMapper.h */,
+				F211A4CC1DE78AE1006CC328 /* JSONKeyMapper.m */,
+				F211A4CD1DE78AE1006CC328 /* JSONValueTransformer.h */,
+				F211A4CE1DE78AE1006CC328 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,14 +347,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F211A4D41DE78AE1006CC328 /* JSONHTTPClient.m in Sources */,
+				F211A4D21DE78AE1006CC328 /* JSONModelError.m in Sources */,
+				F211A4D51DE78AE1006CC328 /* JSONModel+networking.m in Sources */,
 				F211A4B11DE75A96006CC328 /* AFURLRequestSerialization.m in Sources */,
 				F211A47E1DE75017006CC328 /* NSString+Utility.m in Sources */,
+				F211A4D11DE78AE1006CC328 /* JSONModelClassProperty.m in Sources */,
 				F211A45F1DE743B4006CC328 /* AppDelegate.m in Sources */,
 				F211A47A1DE744F2006CC328 /* XTLoginViewController.m in Sources */,
+				F211A4D31DE78AE1006CC328 /* JSONAPI.m in Sources */,
 				F211A4B31DE75A96006CC328 /* AFURLSessionManager.m in Sources */,
 				F211A4B21DE75A96006CC328 /* AFURLResponseSerialization.m in Sources */,
+				F211A4D71DE78AE1006CC328 /* JSONValueTransformer.m in Sources */,
 				F211A4AF1DE75A96006CC328 /* AFNetworkReachabilityManager.m in Sources */,
+				F211A4D01DE78AE1006CC328 /* JSONModel.m in Sources */,
 				F211A4B91DE7747E006CC328 /* XTSession.m in Sources */,
+				F211A4D61DE78AE1006CC328 /* JSONKeyMapper.m in Sources */,
+				F211A4DA1DE78B7B006CC328 /* XTGameWorld.m in Sources */,
 				F211A4B01DE75A96006CC328 /* AFSecurityPolicy.m in Sources */,
 				F211A4AE1DE75A96006CC328 /* AFHTTPSessionManager.m in Sources */,
 				F211A4B61DE75CBA006CC328 /* XTAPIClient.m in Sources */,

@@ -18,4 +18,6 @@
 - (NSString *)deviceType;
 - (NSString *)deviceId;
 
+@property (strong, nonatomic) NSMutableArray *gameWorlds;
+
 @end

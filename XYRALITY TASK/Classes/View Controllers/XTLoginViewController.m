@@ -10,6 +10,7 @@
 
 #import "XTAPIClient.h"
 #import "XTSession.h"
+#import "XTGameWorld.h"
 
 #import "MBProgressHUD.h"
 
@@ -75,7 +76,10 @@
                                                              [MBProgressHUD hideHUDForView:weakSelf.view animated:true];
                                                              
                                                              if (error == nil) {
+                                                                 NSArray *allGameWorlds = [responseDict objectForKey:@"allAvailableWorlds"];
                                                                  
+                                                                 // Creating array of XTGameWorld objects from response
+                                                                 [XTSession sharedSession].gameWorlds = [XTGameWorld arrayOfGameWorldsFromInfo:allGameWorlds];
                                                                  
                                                              } else {
                                                                  [weakSelf showErrorAlertWithMessage:error.localizedDescription];
