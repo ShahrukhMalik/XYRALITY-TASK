@@ -8,6 +8,11 @@
 
 #import "XTLoginViewController.h"
 
+#import "XTAPIClient.h"
+#import "XTSession.h"
+
+#import "MBProgressHUD.h"
+
 #import "NSString+Utility.h"
 
 
@@ -21,6 +26,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 - (IBAction)loginButtonTapped:(id)sender;
+
+@property (strong, nonatomic) NSString *email;
+@property (strong, nonatomic) NSString *password;
 
 @end
 
@@ -49,7 +57,31 @@
 #pragma mark Action methods
 
 - (IBAction)loginButtonTapped:(id)sender {
-    [self validateLogin];
+    
+    if ([self validateLogin]) {
+        
+        MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        hud.label.text = @"Please Wait...";
+        
+        // DEVELOPER'S NOTE: Weak self is used in block to avoid retain cycle
+        __weak typeof(self) weakSelf = self;
+        
+        [[XTAPIClient sharedClient] sendAvailableGameWorldsRequestWithLogin:self.email
+                                                                   password:self.password
+                                                                 deviceType:[[XTSession sharedSession] deviceType]
+                                                                   deviceID:[[XTSession sharedSession] deviceId]
+                                                         andCompletionBlock:^(NSError *error, NSDictionary *responseDict) {
+                                                             
+                                                             [MBProgressHUD hideHUDForView:weakSelf.view animated:true];
+                                                             
+                                                             if (error == nil) {
+                                                                 
+                                                                 
+                                                             } else {
+                                                                 [weakSelf showErrorAlertWithMessage:error.localizedDescription];
+                                                             }
+                                                         }];
+    }
 }
 
 
@@ -60,18 +92,18 @@
     BOOL isValid = NO;
     
     // Removing leading and trailing white spaces from strings
-    NSString *email = self.emailTextField.text.stringByTrimmingLeadingAndTrailingWhiteSpaces;
-    NSString *password = self.passwordTextField.text.stringByTrimmingLeadingAndTrailingWhiteSpaces;
+    self.email = self.emailTextField.text.stringByTrimmingLeadingAndTrailingWhiteSpaces;
+    self.password = self.passwordTextField.text.stringByTrimmingLeadingAndTrailingWhiteSpaces;
     
     NSString *errorMessage = @"";
     
-    if ([email length] == 0) {
+    if ([self.email length] == 0) {
         errorMessage = @"Email is required.";
         
-    } else if ([password length] == 0) {
+    } else if ([self.password length] == 0) {
         errorMessage = @"Password is required.";
         
-    } else if (![email isValidEmail]) {
+    } else if (![self.email isValidEmail]) {
         errorMessage = @"Please enter valid email.";
         
     } else {
@@ -79,15 +111,19 @@
     }
     
     if (!isValid) {
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:errorMessage preferredStyle:UIAlertControllerStyleAlert];
-        
-        UIAlertAction* ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-        [alertController addAction:ok];
-        
-        [self presentViewController:alertController animated:YES completion:nil];
+        [self showErrorAlertWithMessage:errorMessage];
     }
     
     return isValid;
+}
+
+- (void)showErrorAlertWithMessage:(NSString *)errorMessage {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:errorMessage preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *ok = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:ok];
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
 @end

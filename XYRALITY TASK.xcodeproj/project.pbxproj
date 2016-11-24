@@ -21,6 +21,8 @@
 		F211A4B11DE75A96006CC328 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4A91DE75A96006CC328 /* AFURLRequestSerialization.m */; };
 		F211A4B21DE75A96006CC328 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4AB1DE75A96006CC328 /* AFURLResponseSerialization.m */; };
 		F211A4B31DE75A96006CC328 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4AD1DE75A96006CC328 /* AFURLSessionManager.m */; };
+		F211A4B61DE75CBA006CC328 /* XTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4B51DE75CBA006CC328 /* XTAPIClient.m */; };
+		F211A4B91DE7747E006CC328 /* XTSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4B81DE7747E006CC328 /* XTSession.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,10 @@
 		F211A4AB1DE75A96006CC328 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		F211A4AC1DE75A96006CC328 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		F211A4AD1DE75A96006CC328 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		F211A4B41DE75CBA006CC328 /* XTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTAPIClient.h; sourceTree = "<group>"; };
+		F211A4B51DE75CBA006CC328 /* XTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTAPIClient.m; sourceTree = "<group>"; };
+		F211A4B71DE7747D006CC328 /* XTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSession.h; sourceTree = "<group>"; };
+		F211A4B81DE7747E006CC328 /* XTSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSession.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,10 @@
 		F211A4741DE7442B006CC328 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F211A4B41DE75CBA006CC328 /* XTAPIClient.h */,
+				F211A4B51DE75CBA006CC328 /* XTAPIClient.m */,
+				F211A4B71DE7747D006CC328 /* XTSession.h */,
+				F211A4B81DE7747E006CC328 /* XTSession.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,8 +273,10 @@
 				F211A4B31DE75A96006CC328 /* AFURLSessionManager.m in Sources */,
 				F211A4B21DE75A96006CC328 /* AFURLResponseSerialization.m in Sources */,
 				F211A4AF1DE75A96006CC328 /* AFNetworkReachabilityManager.m in Sources */,
+				F211A4B91DE7747E006CC328 /* XTSession.m in Sources */,
 				F211A4B01DE75A96006CC328 /* AFSecurityPolicy.m in Sources */,
 				F211A4AE1DE75A96006CC328 /* AFHTTPSessionManager.m in Sources */,
+				F211A4B61DE75CBA006CC328 /* XTAPIClient.m in Sources */,
 				F211A45C1DE743B4006CC328 /* main.m in Sources */,
 				F211A49F1DE75882006CC328 /* MBProgressHUD.m in Sources */,
 			);
