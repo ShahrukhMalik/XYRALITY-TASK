@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F211A45C1DE743B4006CC328 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A45B1DE743B4006CC328 /* main.m */; };
+		F211A45F1DE743B4006CC328 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A45E1DE743B4006CC328 /* AppDelegate.m */; };
+		F211A4671DE743B4006CC328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F211A4661DE743B4006CC328 /* Assets.xcassets */; };
+		F211A46A1DE743B4006CC328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F211A4681DE743B4006CC328 /* LaunchScreen.storyboard */; };
+		F211A47A1DE744F2006CC328 /* XTLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4781DE744F2006CC328 /* XTLoginViewController.m */; };
+		F211A47B1DE744F2006CC328 /* XTLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F211A4791DE744F2006CC328 /* XTLoginViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F211A4571DE743B4006CC328 /* XYRALITY TASK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XYRALITY TASK.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F211A45B1DE743B4006CC328 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F211A45D1DE743B4006CC328 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F211A45E1DE743B4006CC328 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F211A4661DE743B4006CC328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F211A4691DE743B4006CC328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F211A46B1DE743B4006CC328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F211A4771DE744F2006CC328 /* XTLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTLoginViewController.h; sourceTree = "<group>"; };
+		F211A4781DE744F2006CC328 /* XTLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTLoginViewController.m; sourceTree = "<group>"; };
+		F211A4791DE744F2006CC328 /* XTLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTLoginViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F211A4541DE743B4006CC328 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F211A44E1DE743B4006CC328 = {
+			isa = PBXGroup;
+			children = (
+				F211A4591DE743B4006CC328 /* XYRALITY TASK */,
+				F211A4581DE743B4006CC328 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F211A4581DE743B4006CC328 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F211A4571DE743B4006CC328 /* XYRALITY TASK.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F211A4591DE743B4006CC328 /* XYRALITY TASK */ = {
+			isa = PBXGroup;
+			children = (
+				F211A45D1DE743B4006CC328 /* AppDelegate.h */,
+				F211A45E1DE743B4006CC328 /* AppDelegate.m */,
+				F211A4711DE7442B006CC328 /* Classes */,
+				F211A4661DE743B4006CC328 /* Assets.xcassets */,
+				F211A4681DE743B4006CC328 /* LaunchScreen.storyboard */,
+				F211A46B1DE743B4006CC328 /* Info.plist */,
+				F211A45A1DE743B4006CC328 /* Supporting Files */,
+			);
+			path = "XYRALITY TASK";
+			sourceTree = "<group>";
+		};
+		F211A45A1DE743B4006CC328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F211A45B1DE743B4006CC328 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F211A4711DE7442B006CC328 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F211A4721DE7442B006CC328 /* Categories */,
+				F211A4731DE7442B006CC328 /* Helpers */,
+				F211A4741DE7442B006CC328 /* Models */,
+				F211A4751DE7442B006CC328 /* View Controllers */,
+				F211A4761DE7442B006CC328 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F211A4721DE7442B006CC328 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		F211A4731DE7442B006CC328 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F211A4741DE7442B006CC328 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F211A4751DE7442B006CC328 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F211A4771DE744F2006CC328 /* XTLoginViewController.h */,
+				F211A4781DE744F2006CC328 /* XTLoginViewController.m */,
+				F211A4791DE744F2006CC328 /* XTLoginViewController.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F211A4761DE7442B006CC328 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F211A4561DE743B4006CC328 /* XYRALITY TASK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F211A46E1DE743B4006CC328 /* Build configuration list for PBXNativeTarget "XYRALITY TASK" */;
+			buildPhases = (
+				F211A4531DE743B4006CC328 /* Sources */,
+				F211A4541DE743B4006CC328 /* Frameworks */,
+				F211A4551DE743B4006CC328 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XYRALITY TASK";
+			productName = "XYRALITY TASK";
+			productReference = F211A4571DE743B4006CC328 /* XYRALITY TASK.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F211A44F1DE743B4006CC328 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Home;
+				TargetAttributes = {
+					F211A4561DE743B4006CC328 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F211A4521DE743B4006CC328 /* Build configuration list for PBXProject "XYRALITY TASK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F211A44E1DE743B4006CC328;
+			productRefGroup = F211A4581DE743B4006CC328 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F211A4561DE743B4006CC328 /* XYRALITY TASK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F211A4551DE743B4006CC328 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F211A46A1DE743B4006CC328 /* LaunchScreen.storyboard in Resources */,
+				F211A4671DE743B4006CC328 /* Assets.xcassets in Resources */,
+				F211A47B1DE744F2006CC328 /* XTLoginViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F211A4531DE743B4006CC328 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F211A45F1DE743B4006CC328 /* AppDelegate.m in Sources */,
+				F211A47A1DE744F2006CC328 /* XTLoginViewController.m in Sources */,
+				F211A45C1DE743B4006CC328 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F211A4681DE743B4006CC328 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F211A4691DE743B4006CC328 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F211A46C1DE743B4006CC328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F211A46D1DE743B4006CC328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F211A46F1DE743B4006CC328 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "XYRALITY TASK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.XYRALITY-TASK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F211A4701DE743B4006CC328 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "XYRALITY TASK/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.XYRALITY-TASK";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F211A4521DE743B4006CC328 /* Build configuration list for PBXProject "XYRALITY TASK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F211A46C1DE743B4006CC328 /* Debug */,
+				F211A46D1DE743B4006CC328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F211A46E1DE743B4006CC328 /* Build configuration list for PBXNativeTarget "XYRALITY TASK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F211A46F1DE743B4006CC328 /* Debug */,
+				F211A4701DE743B4006CC328 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F211A44F1DE743B4006CC328 /* Project object */;
+}
