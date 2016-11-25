@@ -38,6 +38,10 @@
 
 @implementation XTLoginViewController
 
+
+#pragma mark -
+#pragma mark UIViewController methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
@@ -80,6 +84,9 @@
                                                                  
                                                                  // Creating array of XTGameWorld objects from response
                                                                  [XTSession sharedSession].gameWorlds = [XTGameWorld arrayOfGameWorldsFromInfo:allGameWorlds];
+                                                                 
+                                                                 // DEVELOPER'S NOTE: Since there is no navigating backwards, so need to keep XTLoginViewController in memory
+                                                                 [[NSNotificationCenter defaultCenter] postNotificationName:@"XTNotifcationsLogInNotificationKey" object:nil];
                                                                  
                                                              } else {
                                                                  [weakSelf showErrorAlertWithMessage:error.localizedDescription];

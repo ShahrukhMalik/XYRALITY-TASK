@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "XTLoginViewController.h"
+#import "XTGameWorldTableViewController.h"
 
 
 #pragma mark -
@@ -26,6 +27,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [self registerNotifications];
     
     XTLoginViewController *loginViewController = [[XTLoginViewController alloc] initWithNibName:@"XTLoginViewController" bundle:nil];
     self.window.rootViewController = loginViewController;
@@ -58,6 +61,27 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+
+#pragma mark -
+#pragma mark Private methods
+
+- (void)registerNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(showGameWorlds)
+                                                 name:@"XTNotifcationsLogInNotificationKey"
+                                               object:nil];
+}
+
+- (void)showGameWorlds {
+    XTGameWorldTableViewController *viewController = [[XTGameWorldTableViewController alloc] initWithNibName:@"XTGameWorldTableViewController" bundle:nil];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    [[UINavigationBar appearance] setTranslucent:NO];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = nav;
 }
 
 

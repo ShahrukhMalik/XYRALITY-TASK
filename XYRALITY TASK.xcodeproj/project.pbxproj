@@ -32,6 +32,10 @@
 		F211A4D61DE78AE1006CC328 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4CC1DE78AE1006CC328 /* JSONKeyMapper.m */; };
 		F211A4D71DE78AE1006CC328 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4CE1DE78AE1006CC328 /* JSONValueTransformer.m */; };
 		F211A4DA1DE78B7B006CC328 /* XTGameWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4D91DE78B7B006CC328 /* XTGameWorld.m */; };
+		F211A4DE1DE7A4BD006CC328 /* XTGameWorldTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4DC1DE7A4BD006CC328 /* XTGameWorldTableViewController.m */; };
+		F211A4DF1DE7A4BD006CC328 /* XTGameWorldTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F211A4DD1DE7A4BD006CC328 /* XTGameWorldTableViewController.xib */; };
+		F211A4E31DE7A59D006CC328 /* XTGameWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F211A4E11DE7A59D006CC328 /* XTGameWorldTableViewCell.m */; };
+		F211A4E41DE7A59D006CC328 /* XTGameWorldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F211A4E21DE7A59D006CC328 /* XTGameWorldTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,12 @@
 		F211A4CF1DE78AE1006CC328 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		F211A4D81DE78B7B006CC328 /* XTGameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGameWorld.h; sourceTree = "<group>"; };
 		F211A4D91DE78B7B006CC328 /* XTGameWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGameWorld.m; sourceTree = "<group>"; };
+		F211A4DB1DE7A4BD006CC328 /* XTGameWorldTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGameWorldTableViewController.h; sourceTree = "<group>"; };
+		F211A4DC1DE7A4BD006CC328 /* XTGameWorldTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGameWorldTableViewController.m; sourceTree = "<group>"; };
+		F211A4DD1DE7A4BD006CC328 /* XTGameWorldTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTGameWorldTableViewController.xib; sourceTree = "<group>"; };
+		F211A4E01DE7A59D006CC328 /* XTGameWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTGameWorldTableViewCell.h; sourceTree = "<group>"; };
+		F211A4E11DE7A59D006CC328 /* XTGameWorldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTGameWorldTableViewCell.m; sourceTree = "<group>"; };
+		F211A4E21DE7A59D006CC328 /* XTGameWorldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XTGameWorldTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +197,9 @@
 				F211A4771DE744F2006CC328 /* XTLoginViewController.h */,
 				F211A4781DE744F2006CC328 /* XTLoginViewController.m */,
 				F211A4791DE744F2006CC328 /* XTLoginViewController.xib */,
+				F211A4DB1DE7A4BD006CC328 /* XTGameWorldTableViewController.h */,
+				F211A4DC1DE7A4BD006CC328 /* XTGameWorldTableViewController.m */,
+				F211A4DD1DE7A4BD006CC328 /* XTGameWorldTableViewController.xib */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -194,6 +207,9 @@
 		F211A4761DE7442B006CC328 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F211A4E01DE7A59D006CC328 /* XTGameWorldTableViewCell.h */,
+				F211A4E11DE7A59D006CC328 /* XTGameWorldTableViewCell.m */,
+				F211A4E21DE7A59D006CC328 /* XTGameWorldTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F211A4DF1DE7A4BD006CC328 /* XTGameWorldTableViewController.xib in Resources */,
+				F211A4E41DE7A59D006CC328 /* XTGameWorldTableViewCell.xib in Resources */,
 				F211A46A1DE743B4006CC328 /* LaunchScreen.storyboard in Resources */,
 				F211A4671DE743B4006CC328 /* Assets.xcassets in Resources */,
 				F211A47B1DE744F2006CC328 /* XTLoginViewController.xib in Resources */,
@@ -359,6 +377,7 @@
 				F211A4B31DE75A96006CC328 /* AFURLSessionManager.m in Sources */,
 				F211A4B21DE75A96006CC328 /* AFURLResponseSerialization.m in Sources */,
 				F211A4D71DE78AE1006CC328 /* JSONValueTransformer.m in Sources */,
+				F211A4DE1DE7A4BD006CC328 /* XTGameWorldTableViewController.m in Sources */,
 				F211A4AF1DE75A96006CC328 /* AFNetworkReachabilityManager.m in Sources */,
 				F211A4D01DE78AE1006CC328 /* JSONModel.m in Sources */,
 				F211A4B91DE7747E006CC328 /* XTSession.m in Sources */,
@@ -368,6 +387,7 @@
 				F211A4AE1DE75A96006CC328 /* AFHTTPSessionManager.m in Sources */,
 				F211A4B61DE75CBA006CC328 /* XTAPIClient.m in Sources */,
 				F211A45C1DE743B4006CC328 /* main.m in Sources */,
+				F211A4E31DE7A59D006CC328 /* XTGameWorldTableViewCell.m in Sources */,
 				F211A49F1DE75882006CC328 /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
